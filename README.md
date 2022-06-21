@@ -1,1 +1,1 @@
-# Corporate-Institution-Landing-Page createdc with html and css
+# Corporate-Institution-Landing-Page created with html and css
