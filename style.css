@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --neon-orange: #ff5f1f;
+    --blue: #0705f9;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+*::selection{
+    background: var(--neon-orange);
+    color: #fff;
+}
+
+body{
+    background: #fff;
+}
+
+header, section{
+    padding: 2rem 7%;
+}
+
+.btn{
+    background-color: var(--neon-orange);
+    color: #fff;
+    padding: .7rem 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #fc7946;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+    width: 50%;
+    margin: auto;
+}
+
+.sub-heading{
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    text-transform: none;
+}
+
+.big-div{
+    background-color: var(--blue);
+    height: auto;
+    z-index: 0;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .1rem solid #fff ;
+}
+
+nav p{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding-top: 10rem;
+}
+
+.home .content{
+    width: 35%;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 2.5rem;
+}
+
+.content p{
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    text-transform: none;
+}
+
+.content img{
+    height: 30rem;
+}
+
+.home .form-container{
+    width:55%;
+    background: #fff;
+    padding: 2.5rem;
+}
+
+.home .form-container::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    right: 9%;
+    background: var(--neon-orange);
+    height: 60%;
+    top: 23%;
+    z-index: -1;
+}
+
+.form-container h2{
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.form-container p{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    text-transform: none;
+    padding-top: 1rem;
+    color: #666;
+}
+
+.form-container form{
+    padding-top: 1rem;
+}
+
+form input, form select{
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+form input:focus, form select:focus{
+   border: .3rem solid var(--blue);
+}
+
+form input:only-of-type {
+    width: 100%;
+}
+
+form .box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box select, .box input, .box button, .box p{
+    width: 100%;
+}
+
+.box select option{
+    background-color: var(--blue);
+    color: #ffff;
+}
+
+.box:last-of-type{
+    margin-top: 2rem;
+}
+
+.box p{
+    color: #000;
+    line-height: 1.2;
+    font-weight: bolder;
+}
+
+.quality{
+    padding: 2rem 12%;
+    z-index: 0;
+}
+
+
+.quality .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 3rem 0;
+    text-align: center;
+   
+}
+
+.box-container .box-1{
+    width: 80%;
+    padding-top: 2rem;
+}
+
+.box-1 i{
+    font-size: 8rem;
+    height: 8rem;
+    width: 8rem;
+    line-height: 8rem;
+    color: var(--neon-orange);
+}
+
+.box-1 p{
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
+    color: #666;
+}
+
+
+.features{
+    background-color: var(--blue);
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.features .heading{
+    color: #fff;
+}
+
+.features .sub-heading, .choose .sub-heading{
+    text-transform: capitalize;
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.features .box-container, .choose .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+}
+
+.box-container .box-2, .box-container .box-3{
+  background-color: #fff;
+  padding: 2.5rem;
+  flex: 1 1 30rem;
+}
+
+.box-container .box-2 p{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-transform: none;
+}
+
+.box-3 img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.choose .box-container{
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.choose .sub-heading{
+    color: var(--neon-orange);
+    font-weight: 900;
+}
+
+.box-container .box-3{
+    text-align: center;
+  }
+
+  .bottom{
+    background-color: var(--blue);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+    height: 70vh;
+    padding-top: 5rem;
+    color: #fff;
+  }
+
+  .bottom .content{
+    flex: 1 1 35rem;
+  }
+
+  .bottom .button{
+    flex: 1 1 35rem;
+  }
+
+  .button .btn{
+    width: 40vw;
+  }
+
+  .button .btn a{
+    color: #fff;
+  }
+
+  .bottom img{
+    height: 20rem;
+  }
+
+  footer{
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 1.5rem 0;
+    font-weight: bold;
+    }  
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header, section{
+        padding: 2rem;
+    }
+
+    .heading{
+        font-size: 2rem;
+    }
+
+    .home .form-container::after{
+        right: 3%;
+        top: 24.5%;
+    }
+
+    .bottom{
+        height: 55vh;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .sub-heading{
+        font-size: 1.5rem;
+    }
+
+    .home .form-container::after{
+        right: 2.5%;
+        top: 23.5%;
+    }
+
+    .box p{
+        line-height: 1;
+    }
+
+    .quality{
+        padding: 2rem 9%;
+    }
+
+    .quality .box-container{
+        gap: 3rem;
+        padding: 2rem 0;
+    }
+
+    .box-container .box-1{
+        width: 100%;
+        padding-top: 2rem;
+    }
+    
+
+    .box-1 i{
+        font-size: 6rem;
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
+    }
+    
+    .box-1 p{
+        font-size: 1.3rem;
+        padding-top: 1rem;
+        line-height: 1.2;
+    }
+    
+}
+
+@media(max-width:600px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+    
+    .content p{
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+    
+
+    .home .form-container::after{
+        width: 45%;
+        right: 2%;
+        top: 24.5%;
+    }
+
+    .box p{
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .bottom{
+        height: 50vh;
+    }
+
+}
+
+@media(max-width:540px){
+    html{
+        font-size: 45%;
+    }
+
+    .content h1{
+        font-size: 1.8rem;
+    }
+    
+    .content p{
+        font-size: 1.3rem;
+    }
+    
+
+    .form-container p{
+        line-height: 2rem;
+    }
+
+    .box p{
+        line-height: 1;
+    }
+
+    .bottom{
+        height: 40vh;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 38%;
+    }
+
+    .content h1{
+        font-size: 1.6rem;
+    }
+    
+    .content p{
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .content img{
+        width:26rem;
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    .home .form-container::after{
+        top: 27%;
+    }
+
+    .form-container p{
+        line-height: 2rem;
+    }
+
+    form input, form select{
+        padding: .7rem;
+        font-size: 1.2rem;
+    }
+
+    .box .btn{
+        font-size: 1.5rem;
+    }
+
+    .box p{
+        font-size: 1rem;
+        line-height: 1;
+    }
+}
+
+@media(max-width:393px){
+    html{
+        font-size: 35%;
+    }
+}
+
+@media(max-width:360px){
+    html{
+        font-size: 30%;
+    }
+}
+
+@media(max-width:280px){
+    html{
+        font-size: 20%;
+    }
+
+    
+    .home .form-container::after{
+        top: 25%;
+    }
+
+    .bottom{
+        height: 30vh;
+    }
+}
